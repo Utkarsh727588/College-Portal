@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import styles from './JobOpenings.module.css';
-import { FaMapMarkerAlt, FaClock, FaBriefcase } from 'react-icons/fa';
+import { FaMapMarkerAlt, FaBriefcase } from 'react-icons/fa';
 
 const JobOpenings = () => {
   const [activeFilter, setActiveFilter] = useState('all');
