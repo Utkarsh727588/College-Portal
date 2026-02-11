@@ -5,6 +5,7 @@ const LoginModal = ({ isOpen, onClose }) => {
   const [userId, setUserId] = useState('');
   const [otp, setOtp] = useState(['', '', '', '', '', '']);
   // const [otpSent, setOtpSent] = useState(false);
+  const setOtpSent = useState(false);
 
   useEffect(() => {
     if (isOpen) {
