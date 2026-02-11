@@ -4,7 +4,7 @@ A modern, feature-rich college portal application built with React, featuring a 
 
 ## 🌐 Live Demo
 
-**Deployed on Vercel:** [https://your-app-name.vercel.app]([https://your-app-name.vercel.app](https://collegepotall-mdab7iks4-utkarsh5669s-projects.vercel.app/)
+**Deployed on Vercel:** [https://collegepotall-mdab7iks4-utkarsh5669s-projects.vercel.app/]
 ## ✨ Features
 
 ### 📝 Multi-Step Application Form
