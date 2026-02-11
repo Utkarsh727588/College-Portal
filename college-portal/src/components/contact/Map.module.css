@@ -1,0 +1,96 @@
+.mapSection {
+  padding: 0;
+  background: #f8f9fa;
+}
+
+.mapWrapper {
+  position: relative;
+  height: 500px;
+  width: 100%;
+}
+
+.mapWrapper iframe {
+  filter: grayscale(20%);
+  transition: filter 0.3s ease;
+}
+
+.mapWrapper:hover iframe {
+  filter: grayscale(0%);
+}
+
+.mapOverlay {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  z-index: 10;
+  animation: slideInLeft 0.8s ease-out;
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.locationCard {
+  background: white;
+  padding: 30px 35px;
+  border-radius: 15px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+  max-width: 350px;
+  border-left: 5px solid var(--primary-purple);
+}
+
+.locationTitle {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--text-dark);
+  margin: 0 0 15px 0;
+}
+
+.locationAddress {
+  font-size: 15px;
+  color: var(--text-light);
+  line-height: 1.8;
+  margin: 0 0 20px 0;
+}
+
+.directionsBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 25px;
+  background: linear-gradient(135deg, var(--primary-purple), var(--secondary-purple));
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 15px;
+  transition: all 0.3s ease;
+}
+
+.directionsBtn:hover {
+  transform: translateX(5px);
+  box-shadow: 0 5px 15px rgba(91, 42, 134, 0.3);
+}
+
+@media (max-width: 768px) {
+  .mapWrapper {
+    height: 400px;
+  }
+
+  .mapOverlay {
+    top: 20px;
+    left: 20px;
+    right: 20px;
+  }
+
+  .locationCard {
+    max-width: 100%;
+  }
+}

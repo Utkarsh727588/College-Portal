@@ -1,0 +1,118 @@
+.achievementsSection {
+  padding: 60px 0;
+  background: #f8f8f8;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: start;
+}
+
+.imageContainer {
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.achievementImage {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.achievementsList {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.title {
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--text-dark);
+  margin: 0;
+  padding-bottom: 15px;
+  border-bottom: 3px solid var(--accent-yellow);
+  display: inline-block;
+}
+
+.achievementsItems {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.achievementItem {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.achievementTitle {
+  font-size: 15px;
+  color: var(--text-dark);
+  line-height: 1.6;
+  margin: 0;
+}
+
+.readMoreLink {
+  color: var(--primary-purple);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  transition: all 0.3s;
+}
+
+.readMoreLink:hover {
+  gap: 10px;
+  color: var(--secondary-purple);
+}
+
+.moreNewsBtn {
+  background: var(--primary-purple);
+  color: white;
+  border: none;
+  padding: 14px 35px;
+  font-size: 14px;
+  font-weight: 700;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s;
+  margin-top: 15px;
+  align-self: flex-start;
+}
+
+.moreNewsBtn:hover {
+  background: var(--secondary-purple);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(91, 42, 134, 0.3);
+}
+
+@media (max-width: 1024px) {
+  .content {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 24px;
+  }
+
+  .achievementTitle {
+    font-size: 14px;
+  }
+}
