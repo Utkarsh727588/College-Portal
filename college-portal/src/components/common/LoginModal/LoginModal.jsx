@@ -4,7 +4,7 @@ import styles from './LoginModal.module.css';
 const LoginModal = ({ isOpen, onClose }) => {
   const [userId, setUserId] = useState('');
   const [otp, setOtp] = useState(['', '', '', '', '', '']);
-  const [otpSent, setOtpSent] = useState(false);
+  // const [otpSent, setOtpSent] = useState(false);
 
   useEffect(() => {
     if (isOpen) {
