@@ -10,6 +10,7 @@ const RegisterModal = ({ isOpen, onClose, onSwitchToLogin }) => {
   const [countryCode, setCountryCode] = useState('IN +91');
   const [otp, setOtp] = useState(['', '', '', '', '', '']);
   // const [otpSent, setOtpSent] = useState(false);
+   const setOtpSent = useState(false);
 
   useEffect(() => {
     if (isOpen) {
