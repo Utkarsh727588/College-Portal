@@ -102,7 +102,7 @@ const ApplyNowForm = () => {
                 required 
               />
               <span className={styles.checkboxText}>
-                By entering these details I agree that Online and its associates can contact me with updates & notifications via Email, SMS, WhatsApp, and Voice call as per the <a href="#" className={styles.privacyLink}>Privacy Policy</a>. This consent will override any registration for DNC / NDNC.
+                By entering these details I agree that Online and its associates can contact me with updates & notifications via Email, SMS, WhatsApp, and Voice call as per the <span className={styles.privacyLink}>Privacy Policy</span>. This consent will override any registration for DNC / NDNC.
               </span>
             </label>
           </div>
